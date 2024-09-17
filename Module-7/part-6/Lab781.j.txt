@@ -1,0 +1,13 @@
+class Lab801{ 
+public static void main(String args[]) { 
+String str="101,srinivas,sri@jlc.com,12345,Blore"; 
+StringTokenizer mytokens = new StringTokenizer(str,","); 
+System.out.println("Count : "+ mytokens.countTokens()); 
+int cid = Integer.parseInt(mytokens.nextToken()); 
+String cname = mytokens.nextToken(); 
+String email = mytokens.nextToken(); 
+long phone = Long.parseLong(mytokens.nextToken()); 
+String city = mytokens.nextToken(); 
+System.out.println(cid+"\t"+cname+"\t"+email+"\t"+phone+"\t"+city); 
+} 
+}

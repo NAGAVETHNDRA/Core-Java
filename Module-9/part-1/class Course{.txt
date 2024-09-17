@@ -1,0 +1,37 @@
+class Course{
+
+public final static JAVA = new Course(101);
+public final static SPRING = new Course(102);
+public final static DSA = new Course(103);
+public final static REACT = new Course(104);
+public final static PYTHON = new Course(105);
+
+int cid;
+private Course (int ci){
+
+this.cid=cid;
+}
+public String toString(){
+return "Course["+cid+"]";
+}
+}
+
+class Lab829{
+
+public static void main(String ar[]){
+
+Course cou1  = Course.JAVA;
+Course cou2 = Course.SPRING;
+Course cou3 = Course.DSA;
+Course cou4 = Course.REACT;
+Course cou5 = Course.PYTHON;
+
+System.out.println(cou1);
+System.out.println(cou1);
+System.out.println(cou2);
+System.out.println(cou3);
+System.out.println(cou4);
+
+System.out.println(cou5);
+}
+}

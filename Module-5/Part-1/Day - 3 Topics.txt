@@ -1,0 +1,19 @@
+. Constraints
+=======================
+Types of Constraints 
+1) NOT NULL Constraint 
+2) UNIQUE Constraint 
+3) PRIMARY KEY Constraint 
+4) FOREIGN KEY Constraint 
+5) DEFAULT Constraint 
+6) CHECK Constraint 
+
+practice Lab-3
+---------------------
+create table mycustmoers1(
+cid int not null,
+cname char(15) not null,
+email char(15) not null,
+phone int(10),
+city char(15)
+);

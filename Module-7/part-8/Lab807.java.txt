@@ -1,0 +1,31 @@
+Lab807.java
+import java.util.*; 
+class Lab807 { 
+public static void main(String args[]) { 
+Calendar mycal = Calendar.getInstance(); 
+System.out.println(mycal); 
+Date mydate = mycal.getTime(); 
+System.out.println(mydate); 
+System.out.println(" Date : " + mycal.get(Calendar.DATE)); 
+System.out.println("Day :" + mycal.get(Calendar.DAY_OF_MONTH)); 
+System.out.println("Month :" + mycal.get(Calendar.MONTH)); 
+System.out.println("Month+1 :" + (mycal.get(Calendar.MONTH) + 1)); 
+System.out.println("Year :" + mycal.get(Calendar.YEAR)); 
+System.out.println(" WOY : " + mycal.get(Calendar.WEEK_OF_YEAR)); 
+System.out.println(" WOM : " + mycal.get(Calendar.WEEK_OF_MONTH)); 
+System.out.println("HOUR :" + mycal.get(Calendar.HOUR)); 
+System.out.println("HOUR_OF_DAY:" + mycal.get(Calendar.HOUR_OF_DAY)); 
+System.out.println("MIN :" + mycal.get(Calendar.MINUTE)); 
+System.out.println("SEC :" + mycal.get(Calendar.SECOND)); 
+System.out.println("AM_PM :" + mycal.get(Calendar.AM_PM)); 
+mycal.add(Calendar.DATE, 7); 
+System.out.println(mycal.getTime()); 
+mycal.add(Calendar.DATE, -14); 
+System.out.println(mycal.getTime()); 
+System.out.println("\n Update Date"); 
+mycal.set(Calendar.MONTH, Calendar.MARCH); 
+mycal.set(Calendar.DATE, 29); 
+mycal.set(Calendar.DAY_OF_MONTH, Calendar.MONDAY); 
+System.out.println(mycal.getTime()); 
+} 
+}

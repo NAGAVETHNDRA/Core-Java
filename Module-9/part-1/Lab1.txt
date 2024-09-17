@@ -1,0 +1,8 @@
+create table students(
+sid int(3),
+sname char(10),
+email char (15),
+phone int(11),
+course char(10),
+fee double
+);
